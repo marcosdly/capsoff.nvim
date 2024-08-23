@@ -1,8 +1,11 @@
-After installing, you can turn off capslock by calling 
+You need to install GCC to install this package.  
+I only tested it on my windows and linux system with the Lazy plugin manager.  
+After installation, it will compile the C file into an executable or object file based on your OS.  
+Then you can turn off Caps Lock by calling
 ```bash
 :CapsLockOff
 ```
-Then you can set an autocmd that automatically turns off Caps Lock after leaving insert mode
+and you can set an autocmd that automatically turns off Caps Lock after leaving insert mode
 ```bash
 vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = "*",
@@ -12,4 +15,6 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 })
 ```
 ***
-I only tested it on my windows and linux system with the Lazy plugin manager. After installation, it will compile the C file into an executable or object file based on your OS. If you encounter any problems, or have improvements for my code. please create an issue or PR. thx!
+
+  
+If you encounter any problems, or have improvements for my little code. please create an issue or PR. thx!
