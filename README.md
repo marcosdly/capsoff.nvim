@@ -15,6 +15,4 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 })
 ```
 ***
-
-  
 If you encounter any problems, or have improvements for my little code. please create an issue or PR. thx!
