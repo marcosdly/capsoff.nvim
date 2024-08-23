@@ -1,4 +1,4 @@
-You need to install GCC to install this package.  
+You need to install GCC berfore installing this package.  
 I only tested it on my windows and linux system with the Lazy plugin manager.  
 After installation, it will compile the C file into an executable or object file based on your OS.  
 Then you can turn off Caps Lock by calling
