@@ -8,12 +8,14 @@ else
 end
 
 local function build()
+  if vim.fn.isdirectory(distDir) ~= 1 then
+    vim.fn.mkdir(distDir)
+  end
+
   if isWindows then
-    vim.fn.mkdir(root .. "\\dist")
     local dir = root .. "\\src\\windows"
     os.execute("gcc -o " .. root .. "\\dist\\capsLockOff.exe " .. dir .. "\\capsLockOff.c")
   else
-    vim.fn.mkdir(root .. "/dist")
     local dir = root .. "/src/linux"
     os.execute("gcc -o " .. root .. "/dist/capsLockOff " .. dir .. "/capsLockOff.c -lX11 -lXtst")
   end
