@@ -6,19 +6,16 @@ I only tested it on my windows and linux system with the Lazy plugin manager.
   opts = {}
 }
 ```
-After installation, it will compile the C file into an executable or object file based on your OS.  
-Then you can turn off Caps Lock by calling
+
+After installation, you can turn off Caps Lock when leaving insert mode or by calling
 ```bash
 :CapsLockOff
 ```
-and you can set an autocmd that automatically turns off Caps Lock after leaving insert mode
+
+If it doesn't work, you can try to rebuild the binary by calling
 ```bash
-vim.api.nvim_create_autocmd("InsertLeave", {
-  pattern = "*",
-  callback = function()
-    vim.cmd("CapsLockOff")
-  end,
-})
+:CapsLockRebuild
 ```
+
 ***
 If you encounter any problems, or have improvements for my little code. please create an issue or PR. thx!
