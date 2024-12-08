@@ -2,7 +2,7 @@ You need to install GCC berfore installing this package.
 I only tested it on my windows and linux system with the Lazy plugin manager.  
 ```bash
 {
-  "ZongBen/capsoff.nvim",
+  "zongben/capsoff.nvim",
   opts = {}
 }
 ```
