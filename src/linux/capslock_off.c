@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void capsLockOff() {
+void capslock_off() {
   Display *display = XOpenDisplay(NULL);
   XKeyboardState keyboardState;
   XGetKeyboardControl(display, &keyboardState);
@@ -19,6 +19,6 @@ void capsLockOff() {
 }
 
 int main() {
-  capsLockOff();
+  capslock_off();
   return 0;
 }
