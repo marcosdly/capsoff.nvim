@@ -1,6 +1,4 @@
 # capsoff.nvim
-## Introduction
-A plugin that turns off CapsLock when you leaving insert mode.  
 
 ## Installation
 **You need to install `gcc` berfore installing this package.**  
