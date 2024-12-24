@@ -1,6 +1,11 @@
+# capsoff.nvim
+## Introduction
+A plugin that turns off CapsLock when you leaving insert mode.  
+
+## Installation
 **You need to install `gcc` berfore installing this package.**  
-I only tested it on my windows and linux system with the Lazy plugin manager.  
 ```lua
+--Lazy
 {
   "zongben/capsoff.nvim",
   build = ":CapsLockOffBuild",
@@ -21,4 +26,5 @@ If it doesn't work, you can try to rebuild the binary by calling
 ```
 
 ***
+I only tested it on my windows and linux system with the Lazy plugin manager.  
 If you encounter any problems, or have improvements for my little code. please create an issue or PR. thx!
