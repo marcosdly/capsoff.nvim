@@ -1,9 +1,12 @@
 **You need to install `gcc` berfore installing this package.**  
 I only tested it on my windows and linux system with the Lazy plugin manager.  
-```bash
+```lua
 {
   "zongben/capsoff.nvim",
-  opts = {}
+  build = ":CapsLockOffBuild",
+  config = function()
+    require("capsoff").setup({})
+  end,
 }
 ```
 
@@ -14,7 +17,7 @@ After installation, you can turn off Caps Lock when leaving insert mode or by ca
 
 If it doesn't work, you can try to rebuild the binary by calling
 ```bash
-:CapsLockRebuild
+:CapsLockOffBuild
 ```
 
 ***
