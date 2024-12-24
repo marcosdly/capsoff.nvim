@@ -8,21 +8,21 @@ local execute_path = isWindows and root .. "\\dist\\capsLockOff.exe" or root .. 
 local M = {}
 
 M.setup = function(opts)
-	opts = opts or {}
-	vim.api.nvim_create_user_command("CapsLockOff", function()
+  opts = opts or {}
+  vim.api.nvim_create_user_command("CapsLockOff", function()
     vim.fn.system(execute_path)
-	end, { nargs = 0 })
+  end, { nargs = 0 })
 
-	vim.api.nvim_create_user_command("CapsLockOffBuild", function()
+  vim.api.nvim_create_user_command("CapsLockOffBuild", function()
     vim.fn.system("make build -C " .. root)
-	end, { nargs = 0 })
+  end, { nargs = 0 })
 
-	vim.api.nvim_create_autocmd("InsertLeave", {
-		pattern = "*",
-		callback = function()
-			vim.cmd("CapsLockOff")
-		end,
-	})
+  vim.api.nvim_create_autocmd("InsertLeave", {
+    pattern = "*",
+    callback = function()
+      vim.cmd("CapsLockOff")
+    end,
+  })
 end
 
 return M
