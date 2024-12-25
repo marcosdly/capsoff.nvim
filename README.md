@@ -1,7 +1,7 @@
 # capsoff.nvim
 
 ## Installation
-**You need to install `gcc` berfore installing this package.**  
+**You need to install `gcc` before installing this package.**  
 ```lua
 --Lazy
 {
@@ -23,6 +23,6 @@ If it doesn't work, you can try to rebuild the binary by calling
 :CapsLockOffBuild
 ```
 
-***
+## Note
 I only tested it on my windows and linux system with the Lazy plugin manager.  
 If you encounter any problems, or have improvements for my little code. please create an issue or PR. thx!
