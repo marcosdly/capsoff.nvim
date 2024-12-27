@@ -24,7 +24,7 @@
 
 ## Usage
 
-After installation, you can turn off Caps Lock when leaving insert mode or by calling
+When leaving insert mode, it will turn off caps lock automatically or by calling
 ```bash
 :CapsLockOff
 ```
