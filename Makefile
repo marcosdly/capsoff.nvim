@@ -1,4 +1,4 @@
-CC = gcc
+CC = zig
 ROOT_DIR = $(CURDIR)
 SRC_FILE = ""
 DIST_FILE = ""
